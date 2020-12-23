@@ -6,8 +6,8 @@
 ***
 
 ## Задание 1
-![alt text](task1.jpg "Task1 screen")
+![alt text](screenshot/task1.jpg "Task1 screen")
 ***
 
 ## Задание 2
-![alt text](task2.jpg "Task2 screen")
+![alt text](screenshot/task2.jpg "Task2 screen")
