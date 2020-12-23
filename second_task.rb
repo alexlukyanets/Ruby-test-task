@@ -6,18 +6,14 @@ def string_proces(string, regex)
   string.downcase!
 
   string.scan(regex) do |match|
-    array_words += match
-  end
-
-  array_words.each do |i|
-    hash_words[i] += 1
+    hash_words[match] += 1
   end
 
   sort_words = hash_words.sort_by { |_, v| -v }.slice(0, 3)
-  not_ubiqe_counter = hash_words.count { |_, v| v == 1 }
+  not_uniqe_counter = hash_words.count { |_, v| v == 1 }
 
-  return [] if not_ubiqe_counter < 3 || hash_words.size == not_ubiqe_counter
-
+  return [] if not_uniqe_counter < 3
+  return 'No duplicate values' if hash_words.size == not_uniqe_counter
   sort_words.map{ |k, _| k }
 end
 
