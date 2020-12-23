@@ -29,7 +29,6 @@ def main
     string = 'This is my test task.
   I\'d to show my great task;
   I solved problems in my-task. I\'ll prepare to interview/colloquy because task is ready'
-    puts 'do you want to run the task with pre-defined data? (y/n)'
   else
     puts 'Enter your string:'
     string = gets.chomp
