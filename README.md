@@ -4,3 +4,4 @@
 - :heavy_check_mark: Ruby 2.7
 - :heavy_check_mark: Rubocop
 
+![alt text](task1.jpg "Описание будет тут")
