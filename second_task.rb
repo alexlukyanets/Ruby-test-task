@@ -23,11 +23,17 @@ end
 
 def main
   regex = /[^a-zA-Z']?([a-zA-Z']+)[^a-zA-Z']?/m
-  string = 'This is my test task.
+  puts 'do you want to run the task with pre-defined data? (y/n)'
+  answer = gets.chomp
+  if answer == 'y'
+    string = 'This is my test task.
   I\'d to show my great task;
   I solved problems in my-task. I\'ll prepare to interview/colloquy because task is ready'
-  # puts 'Enter your string:'
-  # string = gets.chomp
+    puts 'do you want to run the task with pre-defined data? (y/n)'
+  else
+    puts 'Enter your string:'
+    string = gets.chomp
+  end
 
   puts "#{'#' * 50} STRING #{'#' * 42}"
   puts string
