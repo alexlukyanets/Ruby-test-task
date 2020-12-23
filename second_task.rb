@@ -6,7 +6,7 @@ def string_proces(string, regex)
   string.downcase!
 
   string.scan(regex) do |match|
-    hash_words[match] += 1
+    hash_words[match.join] += 1
   end
 
   not_uniqe_counter = hash_words.count { |_, v| v == 1 }
