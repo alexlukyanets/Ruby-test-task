@@ -1,7 +1,6 @@
 # frozen_string_literal: false
 
 def string_proces(string, regex)
-  array_words = []
   hash_words = Hash.new(0)
   string.downcase!
 
